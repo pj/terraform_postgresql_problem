@@ -2,7 +2,8 @@ Example showing terraform init failing when using the postgresql provider.
 
 To run it install docker, clone and run:
 `docker build -t test_terraform .`
-`docker run -it test_terraform`
+
+`docker run -it --env TF_LOG=debug test_terraform`
 
 Which gives the following output:
 ```
